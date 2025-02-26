@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-        Contact Page
+            About Page
     </x-slot:heading>
-    <h1>Welcome to contact page</h1>
+    <h1>Welcome to about page</h1>
 </x-layout>

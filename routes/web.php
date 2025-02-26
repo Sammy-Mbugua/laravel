@@ -14,6 +14,3 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/link', function () {
-    return view('link');
-});
