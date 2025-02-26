@@ -6,28 +6,14 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/jobs', function () {
-    return view('jobs', [
-        'jobs'=>[
-            [
-                'title'=>'PHP Developer',
-                'description'=>'This is an awesome job',
-                'location'=>'Remote'
-            ],
-            [
-                'title'=>'Python Developer',
-                'description'=>'This is an awesome job',
-                'location'=>'Remote'
-            ],
-            [
-                'title'=>'Ruby Developer',
-                'description'=>'This is an awesome job',
-                'location'=>'Remote'
-            ]
-        ]
-    ]);
+Route::get('/about', function () {
+    return view('about');
 });
+
 Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/link', function () {
+    return view('link');
+});
