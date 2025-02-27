@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Model;
 
-class Job extends Model
+class Job
 {
-    public static function allJobs():array
+    public static function all(): array
     {
         return [
             [
@@ -28,14 +28,14 @@ class Job extends Model
         ];
     }
 
-    public static function findJob(int $id):array
+    public static function find(int $id): array
     {
         $job = Arr::first(static::all(), fn($job) => $job['id'] == $id);
 
         if(!$job){
             abort(404);
         }
-        return $jobs;
+        return $job;
         
     }
 }
